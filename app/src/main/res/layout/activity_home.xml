@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".xhrMainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs_rg" >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:backgroundTint="@android:color/holo_orange_light"
+            app:srcCompat="@drawable/ic_common_plus" />
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dcdcdc"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Accept_tab"
+            style="@style/Custom.TabRadioButton"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_setting_selector"
+            android:text="随礼" />
+
+        <RadioButton
+            android:id="@+id/Calendar_tab"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/tab_record_selector"
+            android:text="Home" />
+
+        <RadioButton
+            android:id="@+id/give_tab"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/tab_sign_selector"
+            android:text="收礼" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/sign_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/ic_home" />
+
+</RelativeLayout>

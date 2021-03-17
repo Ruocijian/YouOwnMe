@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GroupRecyclerView">
+        <attr name="group_height" format="dimension" />
+        <attr name="group_child_offset" format="dimension" />
+        <attr name="group_background" format="color" />
+        <attr name="group_text_color" format="color" />
+        <attr name="group_text_size" format="dimension" />
+        <attr name="group_center" format="boolean" />
+        <attr name="group_padding_left" format="dimension" />
+        <attr name="group_padding_right" format="dimension" />
+        <attr name="group_has_header" format="boolean" />
+    </declare-styleable>
+
+    <!--带边框的TextView-->
+    <declare-styleable name="BorderLabelTextView">
+        <!--边框的宽度，默认为1dp-->
+        <attr name="strokeWidth" format="dimension" />
+        <!--圆角半径，默认为2dp-->
+        <attr name="cornerRadius" format="dimension" />
+        <!--边框颜色，默认是没有边框即颜色为Color.TRANSPARENT-->
+        <attr name="strokeColor" format="color" />
+        <!--边框是否跟随文字颜色，默认是true-->
+        <attr name="followTextColor" format="boolean" />
+        <!--实心或空心，默认空心-->
+        <attr name="isSolid" format="boolean" />
+    </declare-styleable>
+
+    <string-array name="type">
+        <item>收礼</item>
+        <item>随礼</item>
+    </string-array>
+
+    <string-array name="reason">
+        <item>结婚大喜</item>
+        <item>新造华堂</item>
+        <item>金榜题名</item>
+    </string-array>
+
+</resources>

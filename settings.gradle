@@ -1,0 +1,4 @@
+include ':calendarview'
+include ':calendarview'
+include ':app'
+rootProject.name = "YouOwnMe_xhr2018054592"

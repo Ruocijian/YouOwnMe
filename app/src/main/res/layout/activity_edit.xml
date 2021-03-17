@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_edit_type"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="68dp"
+        android:text="类别"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_edit_name"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="49dp"
+        android:text="姓名"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_edit_type" />
+
+    <TextView
+        android:id="@+id/text_edit_day"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="日期"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_edit_name" />
+
+    <TextView
+        android:id="@+id/text_edit_money"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="46dp"
+        android:text="金额"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_edit_day" />
+
+    <TextView
+        android:id="@+id/text_edit_reason"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="47dp"
+        android:text="缘由"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_edit_money" />
+
+    <Spinner
+        android:id="@+id/spinner_type"
+        android:layout_width="181dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="72dp"
+        android:entries="@array/type"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_reason"
+        android:layout_width="181dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="72dp"
+        android:textSize="20sp"
+        android:entries="@array/reason"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_money" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="181dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="72dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_type" />
+
+    <EditText
+        android:id="@+id/edit_day"
+        android:layout_width="181dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="72dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="点击打开日期选择器"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name" />
+
+    <EditText
+        android:id="@+id/edit_money"
+        android:layout_width="181dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="72dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="888"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_day" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="118dp"
+        android:text="确定"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="118dp"
+        android:text="取消"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
